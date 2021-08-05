@@ -1,0 +1,325 @@
+Delightly Linux
+Produce Fancy Text With Figlet
+delightlylinux delightlylinux
+7 years ago
+Advertisements
+
+
+⌚ May 30, 2014
+
+figletDo you want to spruce up your readme files with fancy titles and styled text? Figlet will help!
+
+Figlet is a command line program that styles a given line of text with a font of your choosing, so you can from this,
+
+Welcome Figlet!
+to this:
+
+ __        __   _                            _____ _       _      _   _
+ \ \      / /__| | ___ ___  _ __ ___   ___  |  ___(_) __ _| | ___| |_| |
+  \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | |_  | |/ _` | |/ _ \ __| |
+   \ V  V /  __/ | (_| (_) | | | | | |  __/ |  _| | | (_| | |  __/ |_|_|
+    \_/\_/ \___|_|\___\___/|_| |_| |_|\___| |_|   |_|\__, |_|\___|\__(_)
+                                                     |___/
+
+
+a
+echo -e 'Figlet\nwas\nHere' | figlet -f small -c
+Produces this output.
+
+1. Install figlet
+figlet is available for free from the repositories and can be installed using Synaptic or from the command line.
+
+sudo apt-get install figlet
+2. Style Text
+For the basics, open a terminal and enter figlet followed by the text to style. Figlet will render strings containing spaces, so quotes are optional. Here, quotes are used to avoid any possible ambiguity — and as a habit from using echo.
+
+figlet 'Welcome Figlet!'
+
+3. Standard I/O
+Figlet follows the Linux rules of stdin and stdout, so commands and be piped. In this case, the output from echo is piped to the input of figlet.
+
+echo 'Hello, World!' | figlet
+  _   _      _ _         __        __         _     _ _
+ | | | | ___| | | ___    \ \      / /__  _ __| | __| | |
+ | |_| |/ _ \ | |/ _ \    \ \ /\ / / _ \| '__| |/ _` | |
+ |  _  |  __/ | | (_) |    \ V  V / (_) | |  | | (_| |_|
+ |_| |_|\___|_|_|\___( )    \_/\_/ \___/|_|  |_|\__,_(_)
+                     |/
+Again, quotes are optional here.
+
+This styles the entire text from fortune (sudo apt-get install fortune):
+
+fortune | figlet
+4. Changing Fonts
+Other fonts are available, and they are located in /usr/share/figlet. Figlet font files have the .flf filename extension.
+
+To specify a certain font, ensure that it first exists in /usr/share/figlet and then include the -f option followed by the name of the font.
+
+figlet -f script.flf 'Chapter 2.2'
+   ___  _                                __   __
+  / (_)| |                              /  ) /  )
+ |     | |     __,    _ _|_  _   ,_       /    /
+ |     |/ \   /  |  |/ \_|  |/  /  |     /    /
+  \___/|   |_/\_/|_/|__/ |_/|__/   |_/  /___o/___
+                   /|
+                   \|
+The .flf extension is optional, so we could also use:
+
+figlet -f script 'Chapter 2.2'
+5. Figlet Font Examples
+By default, there are 18 figlet font files:
+
+banner.flf  bubble.flf   lean.flf      script.flf  small.flf     smslant.flf
+big.flf     digital.flf  mini.flf      shadow.flf  smscript.flf  standard.flf
+block.flf   ivrit.flf    mnemonic.flf  slant.flf   smshadow.flf  term.flf
+banner.flf
+figlet 'Kitties!' -f banner
+ #    #                               ###
+ #   #  # ##### ##### # ######  ####  ###
+ #  #   #   #     #   # #      #      ###
+ ###    #   #     #   # #####   ####   #
+ #  #   #   #     #   # #           #
+ #   #  #   #     #   # #      #    # ###
+ #    # #   #     #   # ######  ####  ###
+big.flf
+figlet 'Big' -f big
+  ____  _
+ |  _ \(_)
+ | |_) |_  __ _
+ |  _ <| |/ _` |
+ | |_) | | (_| |
+ |____/|_|\__, |
+           __/ |
+          |___/
+block.flf
+figlet 'Block' -f block
+ _|_|_|    _|                      _|
+ _|    _|  _|    _|_|      _|_|_|  _|  _|
+ _|_|_|    _|  _|    _|  _|        _|_|
+ _|    _|  _|  _|    _|  _|        _|  _|
+ _|_|_|    _|    _|_|      _|_|_|  _|    _|
+bubble.flf
+figlet 'Bubble Text' -f bubble
+   _   _   _   _   _   _     _   _   _   _
+  / \ / \ / \ / \ / \ / \   / \ / \ / \ / \
+ ( B | u | b | b | l | e ) ( T | e | x | t )
+  \_/ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/
+ 
+
+digital.flf
+figlet 'Digital' -f digital
+ +-+-+-+-+-+-+-+
+ |D|i|g|i|t|a|l|
+ +-+-+-+-+-+-+-+
+ 
+
+ivrit.flf
+Inverts the text by printing it backwards, right-aligned.
+
+figlet 'Ivirt' -f ivrit
+      _        _       ___
+     | |_ _ __(_)_   _|_ _|
+     | __| '__| \ \ / /| |
+     | |_| |  | |\ V / | |
+      \__|_|  |_| \_/ |___|
+ 
+
+lean.flf
+figlet 'Lean' -f lean
+     _/
+    _/          _/_/      _/_/_/  _/_/_/
+   _/        _/_/_/_/  _/    _/  _/    _/
+  _/        _/        _/    _/  _/    _/
+ _/_/_/_/   _/_/_/     _/_/_/  _/    _/
+ 
+
+mini.flf
+figlet 'Mini' -f mini
+|\/|o._ o
+|  ||| ||
+
+script.flf
+figlet 'Cursive Script' -f script.flf
+   ___
+  / (_)                 o               ()            o
+ |             ,_    ,           _      /\  __   ,_        _ _|_
+ |     |   |  /  |  / \_|  |  |_|/     /  \/    /  |  |  |/ \_|
+  \___/ \_/|_/   |_/ \/ |_/ \/  |__/  /(__/\___/   |_/|_/|__/ |_/
+                                                        /|
+                                                        \|
+shadow.flf
+figlet 'SHAdow' -f shadow
+    ___|  |   |    \        |
+  \___ \  |   |   _ \    _` |  _ \\ \  \   /
+        | ___ |  ___ \  (   | (   |\ \  \ /
+  _____/ _|  _|_/    _\\__,_|\___/  \_/\_/
+ 
+
+slant.flf
+figlet 'Slooping' -f slant
+   _____ __                  _ 
+  / ___// /___  ____  ____  (_)___  ____ _
+  \__ \/ / __ \/ __ \/ __ \/ / __ \/ __ `/
+ ___/ / / /_/ / /_/ / /_/ / / / / / /_/ / 
+/____/_/\____/\____/ .___/_/_/ /_/\__, / 
+                  /_/            /____/
+ 
+
+small.flf
+figlet 'Figlet is Fun!' -f small
+  ___ _      _     _     _      ___          _
+ | __(_)__ _| |___| |_  (_)___ | __|  _ _ _ | |
+ | _|| / _` | / -_)  _| | (_-< | _| || | ' \|_|
+ |_| |_\__, |_\___|\__| |_/__/ |_| \_,_|_||_(_)
+       |___/
+ 
+
+smscript.flf
+figlet 'Part 1' -f smscript
+ , _                  ,
+/|/ \ _,   ,_ _|_    /|
+ |__// |  /  | |      |
+ |   \/|_/   |/|_/    |
+ 
+
+smshadow.flf
+figlet 'Small Shadow' -f smshadow
+   __|             | |   __| |              |
+ \__ \  ` \   _` | | | \__ \   \   _` |  _` |  _ \\ \  \ /
+ ____/_|_|_|\__,_|_|_| ____/_| _|\__,_|\__,_|\___/ \_/\_/
+ 
+
+smslant.flf
+figlet 'Small Slant' -f smslant
+   ____           ____  ______          __
+  / __/_ _  ___ _/ / / / __/ /__ ____  / /_
+ _\ \/  ' \/ _ `/ / / _\ \/ / _ `/ _ \/ __/
+/___/_/_/_/\_,_/_/_/ /___/_/\_,_/_//_/\__/
+ 
+
+standard.flf
+figlet 'Standard' -f standard
+  ____  _                  _               _
+ / ___|| |_ __ _ _ __   __| | __ _ _ __ __| |
+ \___ \| __/ _` | '_ \ / _` |/ _` | '__/ _` |
+  ___) | || (_| | | | | (_| | (_| | | | (_| |
+ |____/ \__\__,_|_| |_|\__,_|\__,_|_|  \__,_|
+ 
+
+mnemonic.flf and term.flf appear as normal text.
+
+ 
+
+6. Aligning Text
+man figlet reveals many options available. One set of options aligns the text to the left, center, or right.
+
+-l  Left-align
+-r  Right-align
+-c  Center
+figlet 'Small Slant' -f smslant -c
+            ____           ____  ______          __
+           / __/_ _  ___ _/ / / / __/ /__ ____  / /_
+          _\ \/  ' \/ _ `/ / / _\ \/ / _ `/ _ \/ __/
+         /___/_/_/_/\_,_/_/_/ /___/_/\_,_/_//_/\__/
+The alignment is relative to the width of the display area, which is 80 columns by default. The display area can be adjusted using the -w option. Suppose we want to right-align within a 40-column display area.
+
+figlet 'Small Slant' -f smslant -r -w 40
+          ____           ____
+         / __/_ _  ___ _/ / /
+        _\ \/  ' \/ _ `/ / /
+       /___/_/_/_/\_,_/_/_/
+         ______          __
+        / __/ /__ ____  / /_
+       _\ \/ / _ `/ _ \/ __/
+      /___/_/\_,_/_//_/\__/
+40 columns means 40 characters wide. However, the figlet font might require about 8 characters per letter as in the upper-case ‘S’ above. This means that the text will wrap at the 40-column boundary, which is why we see ‘Small’ and ‘Slant’ in a column and not on the same line. Wrapping is still right-aligned.
+
+7. Custom Fonts
+Extra fonts are available for download from ftp://ftp.figlet.org/pub/figlet/fonts/. For more information about figlet, read figlet’s man page and visit http://www.figlet.org/. As of the time of this writing, the font database was unaccessible, but fonts can still be downloaded from the ftp site.
+
+ contributed.tar.gz      - Recommended. About 138 new fonts for figlet.
+ international.tar.gz    - Fonts for other languages. Read cjkfonts-readme.
+ ms-dos.tar.gz           - Contains only one font, which would not work.
+ ours.tar.gz             - The default fonts already included with figlet.
+After downloading a custom font, extract it to /usr/share/figlet or specify a custom directory using the -d option with figlet.
+
+To make fonts available to all users, copy them to the figlet font directory at /usr/share/figlet. Inside the extracted font directory, use this command to copy all fonts to the installed figlet font directory:
+
+sudo cp -R * /usr/share/figlet
+The added fonts can then be used like any other font without needing to specify a custom font directory. Double check that all users have read permissions on the fonts.
+
+ 
+
+binary.flf (from contibuted.tar.gz)
+figlet 'binary' -f binary
+01100010 01101001 01101110 01100001 01110010 01111001
+
+chunky.flf  (from contibuted.tar.gz)
+figlet 'chunky' -f chunky
+        __                 __
+ .----.|  |--.--.--.-----.|  |--.--.--.
+ |  __||     |  |  |     ||    <|  |  |
+ |____||__|__|_____|__|__||__|__|___  |
+                                |_____|
+computer.flf (from contibuted.tar.gz)
+figlet 'Computer' -f computer
+ 8""""8
+ 8    " eeeee eeeeeee eeeee e   e eeeee eeee eeeee
+ 8e     8  88 8  8  8 8   8 8   8   8   8    8   8
+ 88     8   8 8e 8  8 8eee8 8e  8   8e  8eee 8eee8e
+ 88   e 8   8 88 8  8 88    88  8   88  88   88   8
+ 88eee8 8eee8 88 8  8 88    88ee8   88  88ee 88   8
+bulbhead.flf (from contributed.tar.gz)
+figlet ‘circus Time!’ -f bulbhead
+
+   ___  ____  ____   ___  __  __  ___    ____  ____  __  __  ____ /\
+  / __)(_  _)(  _ \ / __)(  )(  )/ __)  (_  _)(_  _)(  \/  )( ___))(
+ ( (__  _)(_  )   /( (__  )(__)( \__ \    )(   _)(_  )    (  )__) \/
+  \___)(____)(_)\_) \___)(______)(___/   (__) (____)(_/\/\_)(____)()
+ 
+
+Conclusion
+Figlet is fun to play with! Create a figlet text in a terminal, and then copy and paste it into a text file. Some fine-tweaking might be required because a monospace-type font is required in order to make the figlet text appear as intended.
+
+Try combining various fonts within a readme file in order to highlight sections of text. For example, the title could be given a large figlet font while subheaders are given smaller, styled fonts.
+
+=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~=
+ __      __    _ _   _   _                      _
+ \ \    / /_ _| | |_| |_| |_  _ _ ___ _  _ __ _| |_
+  \ \/\/ / _` | | / /  _| ' \| '_/ _ \ || / _` | ' \
+   \_/\_/\__,_|_|_\_\\__|_||_|_| \___/\_,_\__, |_||_|
+                                          |___/
+ =~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~=
+ Welcome to my guide! Stuck? Lost? Confused? No?
+ Then, you will be after you read this walkthrough.
+ All spoilers revealed! So, let's get started...
+   _   _   _   _     _
+  / \ / \ / \ / \   / \
+ ( P | a | r | t ) ( 1 )
+  \_/ \_/ \_/ \_/   \_/
+ ----------------------------------------------------
+ Roam around and explore.
+   _   _   _   _     _
+  / \ / \ / \ / \   / \
+ ( P | a | r | t ) ( 2 )
+  \_/ \_/ \_/ \_/   \_/
+ ----------------------------------------------------
+ Game over...but have fun!
+Advertisements
+Share this:
+Related
+Colored Text with toilet
+November 13, 2015
+In "linux"
+Let's Learn JavaScript • Lesson 4 • Planning a Script
+July 24, 2017
+In "Lessons"
+Linux Has a Voice with Espeak
+March 23, 2015
+In "linux"
+Categories: linux
+Tags: bash, command line, linux, review
+Leave a Comment
+Delightly Linux
+Back to top
+Advertisements
