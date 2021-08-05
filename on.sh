@@ -1,7 +1,7 @@
 #!/bin/bash
 #Jangan Recode Goblok
-#Silahkan Mampir https://github.com/MasKawer/installer
-#Credit : MasKawer || CilacapCyberCrack
+#Silahkan Mampir https://github.com/Shelly-XD
+#Credit : Shelly || Recoder
 
 trap 'printf "\n";stop;exit 1' 2
 dependencies() {
@@ -65,16 +65,16 @@ TIME='date "+%H:%M:%S"'
 
 cowsay -f eyes Selamat Datang | lolcat
 toilet -f standard " KAWER " -F gay
-echo "-----------------------------"    | lolcat
-echo Login...                           | lolcat
-echo "-----------------------------"    | lolcat
-echo Nama : Mas Kawer                   | lolcat
-echo Team : Cilacap Cyber Crack         | lolcat
-echo Git  : https://github.com/MasKawer | lolcat
-echo "-----------------------------"    | lolcat
-date                                    | lolcat
-echo "+++++++++++++++++++++++++++++"    | lolcat
-echo "+++++++++++++++++++++++++++++"    | lolcat
+echo "-----------------------------"     | lolcat
+echo Login...                            | lolcat
+echo "-----------------------------"     | lolcat
+echo Nama : Shelly                       | lolcat
+echo Team : Recorder.                    | lolcat
+echo Git  : https://github.com/Shelly-Xd | lolcat
+echo "-----------------------------"     | lolcat
+date                                     | lolcat
+echo "+++++++++++++++++++++++++++++"     | lolcat
+echo "+++++++++++++++++++++++++++++"     | lolcat
 
 #Variable Warna
 b="\033[3m"
@@ -96,12 +96,12 @@ figlet KAWER | lolcat
 
 echo "-----------------------------------------------------------------------------------------"
 echo "Tools    : Installer Tools MasKawer        $white                                        "| lolcat
-echo "Credit   : MasKawer | CilacapCyberCrack    $white                                        "| lolcat
-echo "Github   : https://github.com/MasKawer     $white                                        "| lolcat
+echo "Credit   : Shelly-  | Record  Indramayu    $white                                        "| lolcat
+echo "Github   : https://github.com/Shelly-XD    $white                                        "| lolcat
 echo "Version  : V1.5                            $white                                        "| lolcat
 echo "Update   : Setiap Hari Minggu              $white                                        "| lolcat
-echo "Group I  : t.me/TroubleMaker_Team          $white                                        "| lolcat
-echo "Group II : t.me/ShakeTeam                  $white                                        "| lolcat
+echo "Group I  :                                 $white                                        "| lolcat
+echo "Group II :                                 $white                                        "| lolcat
 echo "-----------------------------------------------------------------------------------------"
 ###########################################################
 # CTRL + C
@@ -132,14 +132,14 @@ do
 	echo "-----------------------------" | lolcat
 	echo $c "5. Lazymux";
 	echo "-----------------------------" | lolcat
-	echo $cyan "6. Dark FB Mod MAS KAWER";
+	echo $cyan "6. Dark FB Mod Shelly";
 	echo "-----------------------------" | lolcat
-	echo $g "7. Tampilan Termux MAS KAWER";
+	echo $g "7. Tampilan Termux Shelly";
 	echo "-----------------------------" | lolcat
 	echo $g "8. keluar${endc}";
 	echo "-----------------------------" | lolcat
 	echo ""
-	echo "╭─Mr.KAWER | CilacapCyberCrack"|lolcat
+	echo "╭─Mr.Shelly | Jay"|lolcat
 	read -p "╰─@ " pil;
 
 # Localhost Online
@@ -259,7 +259,7 @@ exit
 
 #DARK FB MOD MASKAWER
 
-6) git clone https://github.com/MasKawer/darkfb | lolcat 
+6) git clone https://github.com/Shelly-XD/mia| lolcat 
 pkg install bash                             | lolcat 
 echo "-----------------------------" | lolcat
 pkg install python                           | lolcat
@@ -268,7 +268,7 @@ pkg install python2                          | lolcat
 echo "-----------------------------" | lolcat
 pip2 install --upgrade pip                   | lolcat
 echo "-----------------------------" | lolcat
-echo "${y} Installer dark-fb Mod MasKawer..."| lolcat
+echo "${y} Installer dark-fb Mod Shelly..."| lolcat
 echo "-----------------------------" | lolcat
 echo "${y} cd darkfb"                        | lolcat
 echo "-----------------------------" | lolcat
@@ -280,7 +280,7 @@ exit
 ;;
 
 
-#Tampilan Termux MASKAWER
+#Tampilan Termux Shelly
 
 7) git clone https://github.com/MasKawer/tampilan | lolcat 
 pkg install bash                             | lolcat 
@@ -295,7 +295,7 @@ pip2 install ruby cowsay toilet figlet neofetch | lolcat
 echo "-----------------------------" | lolcat
 gem install lolcat                           | lolcat
 echo "-----------------------------" | lolcat
-echo "${y} Tampilan Termux MasKawer..."      | lolcat
+echo "${y} Tampilan Termux Shelly..."      | lolcat
 echo "-----------------------------" | lolcat
 echo "${y} cd ../usr/etc"                    | lolcat
 echo "-----------------------------" | lolcat
@@ -306,7 +306,7 @@ exit
 
 ;;
 
-8) echo "created by : MAS KAWER"             | lolcat 
+8) echo "created by : Shelly"             | lolcat 
 exit
 ;;
 
