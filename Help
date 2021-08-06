@@ -4,194 +4,221 @@ const help = (prefix) => {
 *│◪* *Prefix : 「 #{prefix} 」*
 *│◪* *Host : Phone*
 *└◪› GUSTI-BOT*
+╭────
 │
 │${prefix}help
 │${prefix}donate
 │${prefix}sticker
 │${prefix}stickerwm
-⎮彡${prefix}broadcast
-⎮彡${prefix}hidetag
-⎮彡${prefix}tagstick
-⎮彡${prefix}clearall
+│${prefix}broadcast
+│${prefix}hidetag
+│${prefix}tagstick
+│${prefix}clearall
 │
-└◪「 Islami 」
-⎮彡${prefix}listsurah
-⎮彡${prefix}asmaulhusna
-⎮彡${prefix}alquran no_surah
-⎮彡${prefix}alquran no_surah/no_ayat
-⎮彡${prefix}alquran no_surah/no_ayat1-no_ayat2
-⎮彡${prefix}alquranaudio no_surah
-⎮彡${prefix}alquranaudio no_surah/no_ayat
-⎮彡${prefix}kisahnabi nama_nabi
-⎮彡${prefix}jadwalsholat daerah
+╰────
+
+╭─「 Islami 」
+│${prefix}listsurah
+│${prefix}asmaulhusna
+│${prefix}alquran no_surah
+│${prefix}alquran no_surah/no_ayat
+│${prefix}alquran no_surah/no_ayat1-no_ayat2
+│${prefix}alquranaudio no_surah
+│${prefix}alquranaudio no_surah/no_ayat
+│${prefix}kisahnabi nama_nabi
+│${prefix}jadwalsholat daerah
 │
-└◪「 Downloader 」
-⎮彡${prefix}ytsearch query
-⎮彡${prefix}ytplay query
-⎮彡${prefix}ytplay2 query
-⎮彡${prefix}ytmp3 url_video
-⎮彡${prefix}ytmp32 url_video
-⎮彡${prefix}ytmp4 url_video
-⎮彡${prefix}ytmp42 url_video
-⎮彡${prefix}tiktoknowm url_video
-⎮彡${prefix}tiktokmusic url_video
-⎮彡${prefix}igdl url_post
-⎮彡${prefix}fbdl url_video
-⎮彡${prefix}jooxplay query
-⎮彡${prefix}spotify url_music
-⎮彡${prefix}spotifysearch query
-⎮彡${prefix}pinterest query
-⎮彡${prefix}pinterestdl url_pinterest
-⎮彡${prefix}pixiv query
-⎮彡${prefix}pixivdl url_pixiv
-⎮彡${prefix}zippyshare url_zippyshare
-⎮彡${prefix}telesticker url_pack
+╰────
+
+╭─「 Downloader 」
+│${prefix}ytsearch query
+│${prefix}ytplay query
+│${prefix}ytplay2 query
+│${prefix}ytmp3 url_video
+│${prefix}ytmp32 url_video
+│${prefix}ytmp4 url_video
+│${prefix}ytmp42 url_video
+│${prefix}tiktoknowm url_video
+│${prefix}tiktokmusic url_video
+│${prefix}igdl url_post
+│${prefix}fbdl url_video
+│${prefix}jooxplay query
+│${prefix}spotify url_music
+│${prefix}spotifysearch query
+│${prefix}pinterest query
+│${prefix}pinterestdl url_pinterest
+│${prefix}pixiv query
+│${prefix}pixivdl url_pixiv
+│${prefix}zippyshare url_zippyshare
+│${prefix}telesticker url_pack
 │
-└◪「 Movie & Story 」
-⎮彡${prefix}drakorongoing
-⎮彡${prefix}lk21 query
-⎮彡${prefix}wattpad url_wattpad
-⎮彡${prefix}wattpadsearch query
-⎮彡${prefix}cerpen
-⎮彡${prefix}ceritahoror
+╰────
+
+╭─「 Movie & Story 」
+│${prefix}drakorongoing
+│${prefix}lk21 query
+│${prefix}wattpad url_wattpad
+│${prefix}wattpadsearch query
+│${prefix}cerpen
+│${prefix}ceritahoror
 │
-└◪「 Searching 」
-⎮彡${prefix}shopee query
-⎮彡${prefix}google query
-⎮彡${prefix}gimage query
-⎮彡${prefix}gimage2 query
-⎮彡${prefix}konachan query
-⎮彡${prefix}playstore query
-⎮彡${prefix}stickerwa query
-⎮彡${prefix}wallpapersearch query
-⎮彡${prefix}wallpapersearch2 query
+╰────
+
+╭─「 Searching 」
+│${prefix}shopee query
+│${prefix}google query
+│${prefix}gimage query
+│${prefix}gimage2 query
+│${prefix}konachan query
+│${prefix}playstore query
+│${prefix}stickerwa query
+│${prefix}wallpapersearch query
+│${prefix}wallpapersearch2 query
 │
-└◪「 Random Text 」
-⎮彡${prefix}quotes
-⎮彡${prefix}quotesdilan
-⎮彡${prefix}quotesanime
-⎮彡${prefix}quotesimage
-⎮彡${prefix}faktaunik
-⎮彡${prefix}katabijak
-⎮彡${prefix}pantun
-⎮彡${prefix}bucin
-⎮彡${prefix}randomnama
+╰────
+
+╭─「 Random Text 」
+│${prefix}quotes
+│${prefix}quotesdilan
+│${prefix}quotesanime
+│${prefix}quotesimage
+│${prefix}faktaunik
+│${prefix}katabijak
+│${prefix}pantun
+│${prefix}bucin
+│${prefix}randomnama
 │
-└◪「 AniManga 」
-⎮彡${prefix}wait
-⎮彡${prefix}manga query
-⎮彡${prefix}anime query
-⎮彡${prefix}character query
-⎮彡${prefix}kusonime url_kusonime
-⎮彡${prefix}kusonimesearch query
-⎮彡${prefix}otakudesu url_otakudesu
-⎮彡${prefix}otakudesusearch query
-⎮彡${prefix}nhentai kode_bom
-⎮彡${prefix}nhentaipdf kode_bom
-⎮彡${prefix}nhentaisearch query
-⎮彡${prefix}nekopoi url
-⎮彡${prefix}nekopoisearch query
+╰────
+
+╭─「 AniManga 」
+│${prefix}wait
+│${prefix}manga query
+│${prefix}anime query
+│${prefix}character query
+│${prefix}kusonime url_kusonime
+│${prefix}kusonimesearch query
+│${prefix}otakudesu url_otakudesu
+│${prefix}otakudesusearch query
+│${prefix}nhentai kode_bom
+│${prefix}nhentaipdf kode_bom
+│${prefix}nhentaisearch query
+│${prefix}nekopoi url
+│${prefix}nekopoisearch query
 │
-└◪「 Information 」
-⎮彡${prefix}jadwaltv channel
-⎮彡${prefix}jadwaltvnow
-⎮彡${prefix}jadwalbola
-⎮彡${prefix}qrreader
-⎮彡${prefix}heroml hero_name
-⎮彡${prefix}mlstalk id/server
-⎮彡${prefix}genshin character
-⎮彡${prefix}wikipedia query
-⎮彡${prefix}translate kode_negara text
-⎮彡${prefix}brainly query
-⎮彡${prefix}newsinfo
-⎮彡${prefix}cnnindonesia
-⎮彡${prefix}cnnnasional
-⎮彡${prefix}cnninternasional
-⎮彡${prefix}infogempa
-⎮彡${prefix}lirik query
-⎮彡${prefix}cuaca daerah
-⎮彡${prefix}kodepos query
-⎮彡${prefix}indbeasiswa
-⎮彡${prefix}hoax
-⎮彡${prefix}nsfwcheck
-⎮彡${prefix}ocr
+╰────
+
+╭─「 Information 」
+│${prefix}jadwaltv channel
+│${prefix}jadwaltvnow
+│${prefix}jadwalbola
+│${prefix}qrreader
+│${prefix}heroml hero_name
+│${prefix}mlstalk id/server
+│${prefix}genshin character
+│${prefix}wikipedia query
+│${prefix}translate kode_negara text
+│${prefix}brainly query
+│${prefix}newsinfo
+│${prefix}cnnindonesia
+│${prefix}cnnnasional
+│${prefix}cnninternasional
+│${prefix}infogempa
+│${prefix}lirik query
+│${prefix}cuaca daerah
+│${prefix}kodepos query
+│${prefix}indbeasiswa
+│${prefix}hoax
+│${prefix}nsfwcheck
+│${prefix}ocr
 │
-└◪「 Entertainment 」
-⎮彡${prefix}asupan
-⎮彡${prefix}wancak
-⎮彡${prefix}tebakgambar
-⎮彡${prefix}canceltebakgambar
-⎮彡${prefix}akinator
-⎮彡${prefix}cancelakinator
+╰────
+
+╭─「 Entertainment 」
+│${prefix}asupan
+│${prefix}wancak
+│${prefix}tebakgambar
+│${prefix}canceltebakgambar
+│${prefix}akinator
+│${prefix}cancelakinator
 │
-└◪「 Creator 」
-⎮彡${prefix}ttp text
-⎮彡${prefix}ttp2 text
-⎮彡${prefix}ttp3 text
-⎮彡${prefix}ttp4 text
-⎮彡${prefix}attp text
-⎮彡${prefix}smoji emoji
-⎮彡${prefix}fakedonald text
-⎮彡${prefix}ktpmaker
+╰────
+
+╭─「 Creator 」
+│${prefix}ttp text
+│${prefix}ttp2 text
+│${prefix}ttp3 text
+│${prefix}ttp4 text
+│${prefix}attp text
+│${prefix}smoji emoji
+│${prefix}fakedonald text
+│${prefix}ktpmaker
 │
-└◪「 Primbon 」
-⎮彡${prefix}artinama name
-⎮彡${prefix}jodoh name1 & name2 
-⎮彡${prefix}weton tanggal bulan tahun
-⎮彡${prefix}jadian tanggal bulan tahun
-⎮彡${prefix}tebakumur name
+╰────
+
+╭─「 Primbon 」
+│${prefix}artinama name
+│${prefix}jodoh name1 & name2 
+│${prefix}weton tanggal bulan tahun
+│${prefix}jadian tanggal bulan tahun
+│${prefix}tebakumur name
 │
-└◪「 Other 」
-⎮彡${prefix}ssweb link
-⎮彡${prefix}ssweb2 link
-⎮彡${prefix}shortlink link
-⎮彡${prefix}spamsms nomor
+╰────
+
+╭─「 Other 」
+│${prefix}ssweb link
+│${prefix}ssweb2 link
+│${prefix}shortlink link
+│${prefix}spamsms nomor
 │
-└◪「 Text Pro Me 」
-⎮彡${prefix}blackpink text
-⎮彡${prefix}neon text
-⎮彡${prefix}greenneon text
-⎮彡${prefix}advanceglow text
-⎮彡${prefix}futureneon text
-⎮彡${prefix}sandwriting text
-⎮彡${prefix}sandsummer text
-⎮彡${prefix}sandengraved text
-⎮彡${prefix}metaldark text
-⎮彡${prefix}neonlight text
-⎮彡${prefix}holographic text
-⎮彡${prefix}text1917 text
-⎮彡${prefix}minion text
-⎮彡${prefix}deluxesilver text
-⎮彡${prefix}newyearcard text
-⎮彡${prefix}bloodfrosted text
-⎮彡${prefix}halloween text
-⎮彡${prefix}jokerlogo text
-⎮彡${prefix}fireworksparkle text
-⎮彡${prefix}natureleaves text
-⎮彡${prefix}bokeh text
-⎮彡${prefix}toxic text
-⎮彡${prefix}strawberry text
-⎮彡${prefix}box3d text
-⎮彡${prefix}roadwarning text
-⎮彡${prefix}breakwall text
-⎮彡${prefix}icecold text
-⎮彡${prefix}luxury text
-⎮彡${prefix}cloud text
-⎮彡${prefix}summersand text
-⎮彡${prefix}horrorblood text
-⎮彡${prefix}thunder text
-⎮彡${prefix}pornhub text1 text2
-⎮彡${prefix}glitch text1 text2
-⎮彡${prefix}avenger text1 text2
-⎮彡${prefix}space text1 text2
-⎮彡${prefix}ninjalogo text1 text2
-⎮彡${prefix}marvelstudio text1 text2
-⎮彡${prefix}lionlogo text1 text2
-⎮彡${prefix}wolflogo text1 text2
-⎮彡${prefix}steel3d text1 text2
-⎮彡${prefix}wallgravity text1 text2
+╰────
+
+╭─「 Text Pro Me 」
+│${prefix}blackpink text
+│${prefix}neon text
+│${prefix}greenneon text
+│${prefix}advanceglow text
+│${prefix}futureneon text
+│${prefix}sandwriting text
+│${prefix}sandsummer text
+│${prefix}sandengraved text
+│${prefix}metaldark text
+│${prefix}neonlight text
+│${prefix}holographic text
+│${prefix}text1917 text
+│${prefix}minion text
+│${prefix}deluxesilver text
+│${prefix}newyearcard text
+│${prefix}bloodfrosted text
+│${prefix}halloween text
+│${prefix}jokerlogo text
+│${prefix}fireworksparkle text
+│${prefix}natureleaves text
+│${prefix}bokeh text
+│${prefix}toxic text
+│${prefix}strawberry text
+│${prefix}box3d text
+│${prefix}roadwarning text
+│${prefix}breakwall text
+│${prefix}icecold text
+│${prefix}luxury text
+│${prefix}cloud text
+│${prefix}summersand text
+│${prefix}horrorblood text
+│${prefix}thunder text
+│${prefix}pornhub text1 text2
+│${prefix}glitch text1 text2
+│${prefix}avenger text1 text2
+│${prefix}space text1 text2
+│${prefix}ninjalogo text1 text2
+│${prefix}marvelstudio text1 text2
+│${prefix}lionlogo text1 text2
+│${prefix}wolflogo text1 text2
+│${prefix}steel3d text1 text2
+│${prefix}wallgravity text1 text2
 │
-└◪「 Photo Oxy 」
+╰────
+
+╭─「 Photo Oxy 」
 ⎮彡${prefix}shadow text
 ⎮彡${prefix}cup text
 ⎮彡${prefix}cup1 text
