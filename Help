@@ -1,9 +1,15 @@
 const help = (prefix) => {
-    return `*◪* *Informasi BOT*
-*│◪* *Ver : Termux*
-*│◪* *Prefix : 「 #{prefix} 」*
-*│◪* *Host : Phone*
-*└◪› GUSTI-BOT*
+    return `╭────
+│*Prefix : 「 #{prefix} 」*
+│*Host : Phone*
+╰─◪›[ 𝒮𝒽𝑒𝓁𝓁𝓎 𝐵𝑜𝓉 ]*
+
+╭────
+│ BANYAK FITUR YG GA WORK
+│ AKIBAT API KEY FREE
+│ TTD : OWNER SHELLY
+╰────
+
 ╭────
 │
 │${prefix}help
@@ -314,7 +320,7 @@ const help = (prefix) => {
 │${prefix}hentai
 │${prefix}eroyuri
 │
-╰[ 
+╰[ 𝒮𝒽𝑒𝓁𝓁𝓎 𝐵𝑜𝓉 ]
 }
 exports.help = help
 
